@@ -919,7 +919,7 @@ func (p *Parser) parseFormatStringOperator() (string, string, error) {
 	rawText := p.curToken.Literal
 	var fontID string
 	setFontID := false
-	maxTextLength := 208
+	maxTextLength := 184
 	if p.peekTokenIs(token.COMMA) {
 		p.nextToken()
 		if p.peekTokenIs(token.STRING) {
